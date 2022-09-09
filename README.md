@@ -29,9 +29,9 @@ try1
 - どこに行きますか  어디로 가나요?  Kemana kamu pergi
 
 
-[Google][1]
-[Yahoo][2]
-[MSN][3]
+[Google][1]  
+[Yahoo][2]  
+[MSN][3]  
 
   [1]: http://google.com/        "游標顯示"
   [2]: http://search.yahoo.com/  "游標顯示"
