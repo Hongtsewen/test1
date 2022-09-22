@@ -27,6 +27,7 @@ exit();
 mysqli_fetch_field_direct() [name] or [orgname]  
 PDOStatement::getColumnMeta() [name]  
 ```
-***我想寫一段，除了取得某table的欄名、型態、長度...特別試想取「中文備註說明」那部份，你們知道怎麼寫嗎?***
+***我想寫一段，除了取得某table的欄名、型態、長度...  
+想要取得 「中文備註說明」 那部份，你們知道怎麼寫嗎?***
 
 
