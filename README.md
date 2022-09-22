@@ -1,9 +1,11 @@
 # Ask
 
-
 我看了[PHP Manual MySQL 函数 取得结果中指定字段的字段名](https://www.xuchao.org/docs/php/function.mysql-field-name.html)
+
 ***說 mysql_field_name 這是(PHP 4, PHP 5) 的語法，***  
-```$str    ="select * from EMD ";        //取這個檔案  
+
+```
+$str    ="select * from EMD ";        //取這個檔案  
 $result =mysql_query($str) or die("errow: $str \n");  
 $fields = mysql_num_fields($result);  //計算欄位數目  
 $row    = mysql_fetch_field($result); //取欄位資訊  
@@ -21,8 +23,8 @@ for ($i=0; $i<$fields; $i++) {
 exit();  
 ```
 
-
 ***到(PHP 5, PHP 7, PHP 8) 版本換了不同寫法***  
+
 ```
 mysqli_fetch_field_direct() [name] or [orgname]  
 PDOStatement::getColumnMeta() [name]  
