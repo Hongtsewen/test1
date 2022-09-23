@@ -32,4 +32,24 @@ PDOStatement::getColumnMeta() [name]
 ***我想寫一段，除了取得某table的欄名、型態、長度...  
 想要取得 「中文備註說明」 那部份，你們知道怎麼寫嗎?***
 
+## 蕭又誠答:
+```
+select COLUMN_NAME,COLUMN_COMMENT from INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'DS' AND TABLE_SCHEMA='LFH' 
+```
+洪哲文備註:  
+在**information_schema**有個table叫 **COLUMNS**，其中的
+**COLUMN_NAME** 專門紀錄所有欄位名稱 ， **COLUMN_COMMENT** 記欄位備註 ，TABLE_NAME 是資料表名稱 ，TABLE_SCHEMA 則是資料庫名稱(如果已連到該資料庫，這段可省略)，所以
+
+```
+select * from INFORMATION_SCHEMA.COLUMNS; #可以看到所有登錄的TABLE_CATALOG	TABLE_SCHEMA	TABLE_NAME	COLUMN_NAME ....等等
+
+select * from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME = 'EMD' AND TABLE_SCHEMA='LFH' ; 
+ #紀錄了欄位的各種屬性，其中有一欄叫 COLUMN_COMMENT 就是在紀錄這欄的備註的。而
+ 
+select COLUMN_NAME,COLUMN_TYPE,COLUMN_COMMENT from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME = 'EMD' AND TABLE_SCHEMA='LFH' ;  
+#這樣就可以掌握各欄的型態與備註說明
+```
+
+
+
 
