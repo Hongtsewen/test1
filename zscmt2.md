@@ -61,8 +61,9 @@ Unknown column 'PUPD_IDX' in 'field list'
 >我把loclhost上的HARBOR.SYSTBR昨成 SYSTBR.sql檔，準備去換掉那些舊版的。先換localhost的LKHY的。  
 >  
 
-我還需要把htw_try.php這程式 寫入xdxd_menu中 (用 `http://127.0.0.1/lkhy/xdxd_menu_manager.php` )  [請按]([http://lkhy.oil.com.tw/xdxd_menu_manager.php](http://127.0.0.1/lkhy/xdxd_menu_manager.php))
+我還需要把htw_try.php這程式 寫入xdxd_menu中 (用 `http://127.0.0.1/lkhy/xdxd_menu_manager.php` ) [請按](http://127.0.0.1/lkhy/xdxd_menu_manager.php)
 資料已新增！參考SQL語法如下：  
+
 ```
 xdxd_menu:
 INSERT INTO `xdxd_menu` (`id`, `func`, `group`, `parent`, `order`, `name_ZH_TW`, `target_ZH_TW`, `name_ZH_CN`, `target_ZH_CN`, `enable`, `hotbar`, `hotbar_order`, `click`) VALUES (9014, 1, 1000, 1473, 95, '測試用', 'htw_try.php', '測試用', 'htw_try.php', 1, 0, 0, 0);
