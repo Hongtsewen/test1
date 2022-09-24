@@ -1,10 +1,11 @@
 # About_zscmt2.php
 
-how it works under lkhy/module
+*在新太系統的所有程式，如果沒有在xdxd_menu做登記的話，執行時就會碰到說 **您無權使用本功能** 的回答！   
+我試著在lkhy/module/下放入昀達的編程器程式zscmt2.php果然如此！因此，我用以下方法，在xdxd_menu上登錄了資料。而且執行此程式時，還會產稱一支叫htw_try.php程式，因此最後，我也幫這程式都登記進去了。過程如下:*
 
 ---
 
-2020/09/24我這樣查: `select * from xdxd_menu where target_ZH_TW='zscmtest1.php' ;`  
+2020/09/24我到harbor這樣查了一下xdxd_menu: `select * from xdxd_menu where target_ZH_TW='zscmtest1.php' ;`  
 可以看到這支程式登記內容如下：  
 ```
 id = 9011
