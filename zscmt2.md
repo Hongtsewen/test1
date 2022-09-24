@@ -23,7 +23,7 @@ hotbar_order = 0 #抬頭列序#
 click = 0   #敲按#
 ```
 
-我執行了`http://lkhy.oil.com.tw/xdxd_menu_manager.php` [請按](http://lkhy.oil.com.tw/xdxd_menu_manager.php) 然後選擇在-程式設計師區當前流水號[ 9012 ]-按[新增程設區] 填入資料後，它執行了以下指令:  
+我執行了`http://lkhy.oil.com.tw/xdxd_menu_manager.php` 然後選擇在-程式設計師區當前流水號[ 9012 ]-按[新增程設區] 填入資料後，它執行了以下指令:  
 資料已新增！參考SQL語法如下：   
 ```
 xdxd_menu:
@@ -61,7 +61,7 @@ Unknown column 'PUPD_IDX' in 'field list'
 >我把loclhost上的HARBOR.SYSTBR昨成 SYSTBR.sql檔，準備去換掉那些舊版的。先換localhost的LKHY的。  
 >  
 
-我還需要把htw_try.php這程式 寫入xdxd_menu中 (用 `http://127.0.0.1/lkhy/xdxd_menu_manager.php` )  
+我還需要把htw_try.php這程式 寫入xdxd_menu中 (用 `http://127.0.0.1/lkhy/xdxd_menu_manager.php` )  [請按]([http://lkhy.oil.com.tw/xdxd_menu_manager.php](http://127.0.0.1/lkhy/xdxd_menu_manager.php))
 資料已新增！參考SQL語法如下：  
 ```
 xdxd_menu:
