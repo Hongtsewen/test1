@@ -45,7 +45,7 @@ ERROR IN UPDATE REPLACE INTO SYSTBR(`FTYPE`,`FLEN`,`FNAME`,`CTOPIC`,`PADD`,`PUPD
 
 Field 'NOTE' doesn't have a default value
 ```
-***這是因我我用的mariaDB關係，我去SYSTBR的結構 寫[無]我把他改為 null***
+***這是因為我用mariaDB限制較嚴的關係，因此我去SYSTBR的結構： 把NOTE的[無]改為 null***  
 命令句如下: `ALTER TABLE `SYSTBR` CHANGE `NOTE` `NOTE` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;`
 
 ***解決後，又發現這個問題！***
