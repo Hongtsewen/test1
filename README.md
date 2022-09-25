@@ -49,15 +49,16 @@ select * from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME = 'EMD' AND TABLE_SCHE
 select COLUMN_NAME,COLUMN_TYPE,COLUMN_COMMENT from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME = 'EMD' AND TABLE_SCHEMA='LFH' ;  
 #這樣就可以掌握各欄的型態與備註說明
 ```
+- [關於編程器zscmt2.md](https://hongtsewen.github.io/test1/zscmt2.md)
 
-
-
+- 我的每日備份計劃
 ```mermaid
-graph TD
-  A[Hard] -->|Text| B(Round)
-  B --> C{Decision}
-  C -->|One| D[Result 1]
-  C -->|Two| E[Result 2]
+graph LR
+A[B15]--> |11:00| B(debian)
+A --> |11:10|C(db01)
+Backup-->|03:00|A
+Backup-->|03:20|B
+Backup-->|03:40|C
 ```
 
 
