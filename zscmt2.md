@@ -61,7 +61,7 @@ Unknown column 'PUPD_IDX' in 'field list'
 >  
 >akira查🤣LKHY.SYSTBR確實是沒有 PUPD_IDX 這一欄(有的是只有PUPD) 我來看看🤣akira.HARBOR2.SYSTBR 的也沒有  
 >select * from SYSTBR再查localhost.HARBOR.SYSTBR是有的, 但是🤣LKHY.SYSTBR 也是沒有PUPD_IDX 這一欄的, 再查LFH.SYSTBR也是有的,  
->我把loclhost上的HARBOR.SYSTBR昨成 SYSTBR.sql檔，準備去換掉那些舊版的。先換localhost的LKHY的。  
+>我把loclhost上的HARBOR.SYSTBR匯出成 `SYSTBR.sql` 檔，準備去換掉那些舊版的。 ( 最後我是把我localhost的LKHY的換掉了)
 
 ***因為執行zscmt2.php就會產生名叫htw_try.php的程式，所以這支程式也需要在xdxd_menu中做登錄 !***
 
