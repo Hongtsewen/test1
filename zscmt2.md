@@ -6,6 +6,7 @@
 ---
 
 ***我想先看看，xdxd_menu是怎樣登記某支程式的!***
+
 2020/09/24我到harbor這樣查了一下xdxd_menu: `select * from xdxd_menu where target_ZH_TW='zscmtest1.php' ;`  
 可以看到這支程式登記內容如下：  
 ```
