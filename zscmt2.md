@@ -57,12 +57,13 @@ ERROR IN UPDATE REPLACE INTO SYSTBR(`FTYPE`,`FLEN`,`FNAME`,`CTOPIC`,`PADD`,`PSER
 Unknown column 'PUPD_IDX' in 'field list'
 ```
 
-這下子發現有些地方用的SYSTBR是舊版，新版的 蕭又誠有加欄位還有中文註解：  
+這下子發現有些地方用的SYSTBR是舊版的🤣，新版的，蕭又誠有增加了欄位還有中文註解：  
 >  
 >akira查🤣LKHY.SYSTBR確實是沒有 PUPD_IDX 這一欄(有的是只有PUPD) 我來看看🤣akira.HARBOR2.SYSTBR 的也沒有  
 >select * from SYSTBR再查localhost.HARBOR.SYSTBR是有的, 但是🤣LKHY.SYSTBR 也是沒有PUPD_IDX 這一欄的, 再查LFH.SYSTBR也是有的,  
 >我把loclhost上的HARBOR.SYSTBR昨成 SYSTBR.sql檔，準備去換掉那些舊版的。先換localhost的LKHY的。  
->  
+
+***因為執行zscmt2.php就會產生名叫htw_try.php的程式，所以這支程式也需要在xdxd_menu中做登錄 !***
 
 我還需要把htw_try.php這程式 寫入xdxd_menu中 (用 `http://127.0.0.1/lkhy/xdxd_menu_manager.php` ) [請按](http://127.0.0.1/lkhy/xdxd_menu_manager.php)
 資料已新增！參考SQL語法如下：  
